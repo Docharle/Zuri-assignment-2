@@ -23,6 +23,13 @@ class Portfolio extends StatelessWidget {
             children: [
               Expanded(
                 child: Container(
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.green,
+                    boxShadow: [
+                      BoxShadow(color: Colors.green, spreadRadius: 3),
+                    ],
+                  ),
                   height: 200,
                   margin: EdgeInsets.all(0),
                   width: 500,
@@ -56,9 +63,16 @@ class Portfolio extends StatelessWidget {
               ),
               Expanded(
                 child: Container(
-                  color: Colors.white,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(
+                      10,
+                    ),
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(color: Colors.green, spreadRadius: 3),
+                    ],
+                  ),
                   height: 200,
-                  // margin: EdgeInsets.all(0),
                   margin: EdgeInsets.zero,
                   width: 500,
                   alignment: Alignment.center,
@@ -79,9 +93,17 @@ class Portfolio extends StatelessWidget {
                         margin: EdgeInsets.all(10),
                         alignment: Alignment.centerLeft,
                         width: 500,
-                        child: ImageIcon(
-                          AssetImage('assets/images/placeholder.png'),
-                          size: 50,
+                        child: Row(
+                          children: [
+                            ImageIcon(
+                              AssetImage('assets/images/placeholder.png'),
+                              size: 50,
+                            ),
+                            Text(
+                              'Location: Abuja',
+                              textDirection: TextDirection.ltr,
+                            ),
+                          ],
                         ),
                       ),
                       Container(
@@ -89,9 +111,17 @@ class Portfolio extends StatelessWidget {
                         margin: EdgeInsets.all(10),
                         width: 500,
                         alignment: Alignment.centerLeft,
-                        child: ImageIcon(
-                          AssetImage('assets/images/twitter.png'),
-                          size: 50,
+                        child: Row(
+                          children: [
+                            ImageIcon(
+                              AssetImage('assets/images/twitter.png'),
+                              size: 50,
+                            ),
+                            Text(
+                              'Twitter: https://twitter.com/this_is_dols',
+                              textDirection: TextDirection.ltr,
+                            ),
+                          ],
                         ),
                       ),
                       Container(
@@ -100,9 +130,17 @@ class Portfolio extends StatelessWidget {
                         height: 70,
                         width: 500,
                         alignment: Alignment.centerLeft,
-                        child: ImageIcon(
-                          AssetImage('assets/images/whatsapp.png'),
-                          size: 50,
+                        child: Row(
+                          children: [
+                            ImageIcon(
+                              AssetImage('assets/images/whatsapp.png'),
+                              size: 50,
+                            ),
+                            Text(
+                              'WhatsApp: WhatsApp.com',
+                              textDirection: TextDirection.ltr,
+                            ),
+                          ],
                         ),
                         //Text('How are you', textDirection: TextDirection.ltr,)
                       ),
@@ -112,7 +150,13 @@ class Portfolio extends StatelessWidget {
               ),
               Expanded(
                 child: Container(
-                  color: Colors.blue,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.blue,
+                    boxShadow: [
+                      BoxShadow(color: Colors.green, spreadRadius: 3),
+                    ],
+                  ),
                   height: 200,
                   margin: EdgeInsets.all(0),
                   width: 500,
